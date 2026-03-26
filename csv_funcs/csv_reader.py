@@ -5,6 +5,7 @@ PREINSCRIPTION_PHONE_COL = 'phone'
 PREINSCRIPTION_EMAIL_COL = 'email'
 INSCRIPTION_EMAIL_COL = 'email'
 
+
 def load_csv_as_dict(file_path, key_col, value_col):
     """Load CSV into a dictionary using specified columns as key-value pairs."""
     data = {}
@@ -48,3 +49,4 @@ def intersect_contacts(preinscription, inscription):
             intersected[email] = phone
 
     return intersected
+    
